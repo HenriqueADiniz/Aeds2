@@ -1,0 +1,93 @@
+class Matriz {
+    private Celula inicio;
+    private int linha, coluna;
+ 
+    public Matriz (){
+       Matriz(3, 3);
+    }
+ 
+    public Matriz (int linha, int coluna){
+       this.linha = linha;
+       this.coluna = coluna;
+ 
+       //alocar a matriz com this.linha linhas e this.coluna colunas
+    }
+public Matriz soma (Matriz m) {
+    Matriz resp = null;
+
+    if(this.linha == m.linha && this.coluna == m.coluna){
+       resp = new Matriz(this.linha, this.coluna);
+       for(Celula i = m.inicio; i != null; i = i.baixo){
+          for(Celula j = m.inicio; j != null; j = j.dir){
+           Matriz c=resp.elemento;
+           Matriz a= this.elemento;
+           Matriz b=m.elemento
+             //sendo c (pont em resp), a (em this) e b (em m)
+             c.elemento = a.elemento + b.elemento;
+             resp=resp.dir;
+             this=this.dir
+             m=m.dir;
+          }
+       }
+       return resp;
+       //...
+    }
+
+    return resp;
+ }
+ //praticamente a mesma coisa so que ao inves de somar multiplica
+
+ public Matriz multiplicacao (Matriz m) {
+    Matriz resp = null;
+
+    if(this.linha == m.linha && this.coluna == m.coluna){
+        resp = new Matriz(this.linha, this.coluna);
+        for(m.inicio,this.inicio;m.baixo!=null,this.baixo!=null;m.baixo,this.baixo){
+           for(m.inicio,this.inicio;m.dir!=null,this.dir!=null;){
+            Matriz c=resp.elemento;
+            Matriz a= this.elemento;
+            Matriz b=m.elemento
+              //sendo c (pont em resp), a (em this) e b (em m)
+              c.elemento = a.elemento * b.elemento;
+              resp=resp.dir;
+              this=this.dir
+              m=m.dir;
+           }
+    }
+
+    return resp;
+ }
+}
+ public boolean isQuadrada(){
+    boolean (this.linha == this.coluna);
+ }
+ public void mostrarDiagonalPrincipal (){
+    if(isQuadrada() == true){
+        for(this.inicio;this.baixo!=null;this.baixo){
+            for(this.inicio;this.dir!=null;this.dir){
+                if(this.elemento==){
+                    System.out.println(this.elemento);
+                }
+
+
+
+    }
+ }
+    }
+}
+ public void mostrarDiagonalSecundaria (){
+    if(isQuadrada() == true){
+        for(m.elemento,this.elemento;m.baixo!=null,this.baixo!=null;m.baixo,this.baixo){
+        for(m.elemento,this.elemento;m.dir!=null,this.dir!=null;m.dir,this.dir){
+            if((m.elemento+this.elemento)==()){
+                System.out.println(m.elemento + this.elemento);
+            }
+
+
+
+}
+}
+    }
+ }
+
+}
